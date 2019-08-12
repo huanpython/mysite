@@ -35,13 +35,17 @@ STATICFILES_DIRS = [
 INSTALLED_APPS = [
     'simpleui',
     'polls.apps.PollsConfig',
+    'goods.apps.GoodsConfig',
+    'trade.apps.TradeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
