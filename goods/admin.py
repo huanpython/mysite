@@ -4,6 +4,8 @@ from django.contrib import admin
 from goods.models import GoodsCategory, GoodsCategoryBrand, Goods, GoodsImage, Banner, IndexAd, HotSearchWords
 
 
+admin.site.site_header = "生鲜项目后台管理"
+
 admin.site.register(GoodsCategory)
 admin.site.register(GoodsCategoryBrand)
 admin.site.register(Goods)
