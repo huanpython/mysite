@@ -9,4 +9,8 @@ class Music(models.Model):
     created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
+        verbose_name = '音乐'
+        verbose_name_plural = verbose_name
         db_table = "music"
+
+
