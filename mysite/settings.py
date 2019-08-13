@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'trade',
     'user_operation',
     'users',
+    'musics',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
