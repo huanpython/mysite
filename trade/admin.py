@@ -3,6 +3,18 @@ from django.contrib import admin
 # Register your models here.
 from trade.models import ShoppingCart, OrderInfo, OrderGoods
 
-admin.site.register(ShoppingCart)
-admin.site.register(OrderInfo)
+class ShoppingCartAdmin(admin.ModelAdmin):
+    list_display = ["user", "goods", "nums", ]
+
+
+class OrderInfoAdmin(admin.ModelAdmin):
+    list_display = ["user", "order_sn",  "trade_no", "pay_status", "post_script", "order_mount",
+                    "order_mount", "pay_time", "add_time"]
+
+
+
+
+
+admin.site.register(ShoppingCart, ShoppingCartAdmin)
+admin.site.register(OrderInfo, OrderInfoAdmin)
 admin.site.register(OrderGoods)
