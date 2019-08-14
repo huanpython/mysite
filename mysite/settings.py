@@ -34,12 +34,12 @@ STATICFILES_DIRS = [
 
 INSTALLED_APPS = [
     'simpleui',
-    'polls',
-    'goods',
-    'trade',
-    'user_operation',
-    'users',
-    'musics',
+    'app.polls',
+    'app.goods',
+    'app.trade',
+    'app.user_operation',
+    'app.users',
+    'app.musics',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'authtoken',
 ]
 
 
